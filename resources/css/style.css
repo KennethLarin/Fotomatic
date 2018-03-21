@@ -35,7 +35,7 @@ body {
   height: auto;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 580px) {
   .main-content {
     top: 2.5625rem;
   }
@@ -68,6 +68,10 @@ nav li {
   padding-left: 3.5rem;
 }
 
+#hidden-button {
+  display: none;
+}
+
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
@@ -84,7 +88,23 @@ header .mobile {
   display: none;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
+
+  #hidden-button {
+    display: inline-block;
+    padding: .1875rem .5rem;
+    background-color: #9dc20b;
+    border-radius: 4px;
+    margin-left: 3.5rem;
+  }
+
+  #hidden-button a {
+    line-height: 1.6;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 580px) {
   header .desktop {
     display: none;
   }
@@ -110,10 +130,10 @@ header .mobile {
   }
 
   header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
+      padding: .1875rem .5rem;
+      background-color: #9dc20b;
+      line-height: 1.6;
+      color: white;
   }
 }
 
@@ -173,7 +193,7 @@ header .mobile {
   padding: 1.25rem 7.25rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -205,7 +225,7 @@ header .mobile {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -264,6 +284,21 @@ header .mobile {
 
 @media only screen and (max-width: 890px) {
   .feature h2 {
+      padding-top: 1rem;
+      padding-left: 2rem;
+      text-align: left;
+      font-size: 1.75rem;
+  }
+
+  .feature h3 {
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+  .feature h2 {
     font-size: 1.125rem;
     line-height: 1.3;
     font-weight: normal;
@@ -273,9 +308,7 @@ header .mobile {
     font-size: .875rem;
     line-height: 1.4;
   }
-}
 
-@media only screen and (max-width: 760px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -320,7 +353,7 @@ header .mobile {
 
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -373,14 +406,18 @@ header .mobile {
   height: 1.875rem;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 890px) {
   #quotes-section .content {
     padding: 1.875rem .625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    text-align: left;
   }
 
   #quotes-section .quote-citation {
