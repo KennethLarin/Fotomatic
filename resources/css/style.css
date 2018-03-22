@@ -447,6 +447,18 @@ header .mobile {
   }
 }
 
+@media only screen and (max-width: 580px) {
+  #quotes-section .content {
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  #quotes-section .quote {
+    text-align: center;
+    padding: 0;
+  }
+}
+
 /* Footer */
 
 footer {
