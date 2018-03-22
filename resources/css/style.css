@@ -37,7 +37,7 @@ body {
 
 @media only screen and (max-width: 580px) {
   .main-content {
-    top: 2.5625rem;
+    top: 3rem;
   }
 }
 
@@ -105,6 +105,10 @@ header .mobile {
 }
 
 @media only screen and (max-width: 580px) {
+  header {
+    max-height: 3rem;
+  }
+
   header .desktop {
     display: none;
   }
@@ -112,10 +116,11 @@ header .mobile {
   header .mobile {
     display: block;
     width: 100%;
-  }
+    }
 
   header .content {
-    padding: .5rem 0;
+    padding: 0;
+    height: 3rem;
   }
 
   header .mobile ul {
@@ -148,6 +153,7 @@ header .mobile {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  top: 48px;
 }
 
 #sign-up-cta {
